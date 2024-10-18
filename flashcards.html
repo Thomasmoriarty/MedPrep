@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedPrep - Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>MedPrep Flashcards</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#flashcards">Flashcards</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="flashcards" class="flashcards-section">
+        <h2>Your GAMSAT Flashcards</h2>
+        <div id="flashcard-container">
+            <div class="flashcard">
+                <div class="flashcard-content">
+                    <h3>Flashcard Title</h3>
+                    <p>This is a flashcard content area. It can be a question or a concept to remember.</p>
+                </div>
+                <button class="flip-button">Flip</button>
+            </div>
+           
+                
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+                <div class="front">
+                    <h3>Question: What is the capital of France?</h3>
+                </div>
+                <div class="back">
+                    <h3>Answer: Paris</h3>
+                </div>
+            </div>
+                
+            
+            <!-- Add more flashcards as needed -->
+        </div>
+        <button class="add-flashcard">Add Flashcard</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MedPrep by Thomas Moriarty. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

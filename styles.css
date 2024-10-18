@@ -1,0 +1,275 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+    font-size: 1.5rem;
+}
+
+/* Header and Navigation */
+header {
+    background: #2C3E50; /* Deep muted blue for header */
+    padding: 10px 20px; /* Reduced padding */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo h1 {
+    color: #ffffff; /* Bright orange for logo text */
+    font-size: 1.5rem; /* Reduced font size */
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 15px; /* Reduced space between links */
+}
+
+.nav-links li a {
+    color: #F39C12; /* Bright orange for nav links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #ffcc80; /* Lighter orange on hover */
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh; /* Reduced height for hero section */
+    background: url('../images/hero-image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* White text for other elements */
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 2.5rem; /* Reduced font size */
+    font-weight: 700;
+    margin-bottom: 10px; /* Reduced margin for tighter spacing */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    color: rgb(2, 2, 7); /* Change to navy for better visibility */
+}
+
+.hero p {
+    font-size: 1rem; /* Reduced font size */
+    margin-bottom: 20px; /* Reduced margin for tighter spacing */
+    color: rgb(1, 1, 8); /* Change to navy for better visibility */
+}
+
+.cta-button {
+    padding: 15px 25px; /* Reduced padding for button */
+    background-color: #7da3ef; /* Bright orange for CTA button */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1rem; /* Reduced font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
+
+/* Info Section */
+.info-section {
+    padding: 15px 20px; /* Reduced padding for less gap */
+    background-color: #fff; /* White background for contrast */
+    text-align: center;
+    margin-top: -10px; /* Negative margin to overlap with the hero section */
+}
+
+.info-section h3 {
+    font-size: 1.5rem; /* Reduced font size */
+    margin-bottom: 10px; /* Reduced margin for tighter spacing */
+}
+
+.info-section p {
+    font-size: 1rem; /* Reduced font size */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Features Section */
+.features-section {
+    padding: 15px 20px; /* Reduced padding for less gap */
+    background-color: #f4f7f6; /* Light background for features section */
+    text-align: center;
+    margin-top: -10px; /* Negative margin to overlap with the info section */
+}
+
+.features-section h3 {
+    font-size: 1.5rem; /* Reduced font size */
+    margin-bottom: 10px; /* Reduced margin for tighter spacing */
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 10px; /* Reduced gap between features */
+}
+
+.feature-box {
+    background: #fff; /* White background for feature boxes */
+    padding: 15px; /* Reduced padding for tighter spacing */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.feature-box h4 {
+    font-size: 1.2rem; /* Reduced font size */
+    margin-bottom: 5px; /* Reduced margin for tighter spacing */
+}
+
+.feature-box p {
+    font-size: 0.9rem; /* Reduced font size */
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 15px 20px; /* Reduced padding for less gap */
+    background-color: #fff; /* White background for contact section */
+    text-align: center;
+    margin-top: -10px; /* Negative margin to overlap with the features section */
+}
+
+.contact-section h3 {
+    font-size: 1.5rem; /* Reduced font size */
+    margin-bottom: 10px; /* Reduced margin for tighter spacing */
+}
+
+.contact-section p {
+    font-size: 1rem; /* Reduced font size */
+}
+
+.contact-section a {
+    color: #1243f3; /* Bright orange for links */
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50; /* Deep muted blue for footer */
+    color: #fff; /* White text for footer */
+    padding: 15px; /* Reduced padding */
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.8rem; /* Reduced font size */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+    }
+
+    .cta-button {
+        font-size: 0.9rem; /* Adjusted font size for smaller screens */
+    }
+
+    
+}
+
+/* Flashcards Section Styles */
+.flashcards-section {
+    padding: 20px; /* Space around the flashcard section */
+    background-color: #f4f7f6; /* Light background for contrast */
+    text-align: center; /* Centered text */
+}
+
+.flashcards-section h2 {
+    font-size: 2rem; /* Font size for the section heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#flashcard-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows flashcards to wrap */
+    justify-content: center; /* Center the flashcards */
+    gap: 20px; /* Space between flashcards */
+}
+
+.flashcard {
+    background-color: #fff; /* White background for flashcards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px; /* Space inside the card */
+    max-width: 300px; /* Limit width of the flashcards */
+    text-align: left; /* Align text to the left */
+    position: relative; /* For positioning the flip button */
+}
+
+.flashcard-content {
+    margin-bottom: 10px; /* Space below the content */
+}
+
+.flip-button {
+    background-color: #7da3ef; /* Background color for flip button */
+    color: white; /* White text for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Space inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.flip-button:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
+
+.add-flashcard {
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px; /* Space inside the button */
+    background-color: #2C3E50; /* Dark color for button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.add-flashcard:hover {
+    background-color: #34495e; /* Darker shade on hover */
+}
+
